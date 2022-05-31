@@ -1,4 +1,4 @@
-name: update uffizzi preview environment
+name: Update Uffizzi Preview Environment
 
 on:
   pull_request:
@@ -153,8 +153,8 @@ jobs:
         with:
           preview-id: ${{ steps.comment.outputs.id }}
           compose-file: 'docker-compose.rendered.yml'
-          username: admin@uffizzicloud.com
-          server: https://devops-pro-europe-2022.uffizzicloud.com/
+          username: adam@idyl.tech
+          server: https://devopseu.uffizzicloud.com
           project: default
           password: ${{ secrets.UFFIZZI_PASSWORD }}
       - name: Check outputs
